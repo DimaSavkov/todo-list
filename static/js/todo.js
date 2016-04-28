@@ -30,7 +30,7 @@ $(document).ready(function (){
                                '<span data-url="/update?id=' + data['id'] + '" class="btn_done state-icon glyphicon glyphicon-unchecked "></span> ' + data['task-text'] +
                                '<span class="pull-right button-group">' +
                                '<a class="btn_delete" data-url="/delete?id=' + data['id'] + '" ><span class="glyphicon glyphicon-trash"></span></a></span></li>';
-                $('#todo-list').find('li:last').after(task_li);
+                $('#todo-list').append(task_li);
                 $('#create_form').hide();
                 $('#create_btn_show').show();
                 $('#task-text').val("");
